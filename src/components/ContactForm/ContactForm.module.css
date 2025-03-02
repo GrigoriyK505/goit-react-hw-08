@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    /* Світлий фон */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    /* Білий фон форми */
+    border: 1px solid #ddd;
+    /* Легкий бордюр */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Тінь */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    /* Темний текст */
+}
+
+.input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007bff;
+    /* Синя рамка при фокусі */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.error {
+    font-size: 14px;
+    color: #dc3545;
+    /* Червоний текст для помилок */
+    margin: 0;
+}
+
+.button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    /* Білий текст */
+    background-color: #007bff;
+    /* Синя кнопка */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    /* Темніший синій при ховері */
+    transform: scale(1.05);
+    /* Легке збільшення */
+}
+
+.button:active {
+    background-color: #004085;
+    /* Ще темніший синій */
+    transform: scale(1);
+    /* Повернення до звичайного розміру */
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .form {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .input,
+    .button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

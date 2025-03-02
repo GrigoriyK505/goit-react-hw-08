@@ -1,0 +1,76 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    /* Відступ між елементами */
+    background: #ffffff;
+    /* Білий фон елементів */
+    border: 1px solid #ddd;
+    /* Легкий бордюр */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Тінь */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+    transform: translateY(-3px);
+    /* Легкий підйом при ховері */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* Тінь при ховері */
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    /* Темний текст */
+}
+
+.button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    /* Білий текст */
+    background-color: #dc3545;
+    /* Червона кнопка */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #c82333;
+    /* Темніший червоний при ховері */
+    transform: scale(1.05);
+    /* Легке збільшення */
+}
+
+.button:active {
+    background-color: #a71d2a;
+    /* Ще темніший червоний */
+    transform: scale(1);
+    /* Повернення до нормального розміру */
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        /* Вертикальне розташування для маленьких екранів */
+        align-items: flex-start;
+    }
+
+    p {
+        margin-bottom: 10px;
+        /* Додаємо відступ між текстом і кнопкою */
+    }
+
+    .button {
+        align-self: flex-end;
+        /* Вирівнювання кнопки праворуч */
+    }
+}
