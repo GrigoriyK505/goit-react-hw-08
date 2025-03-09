@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 const SearchBox = () => {
     const dispatch = useDispatch();
     return (
-        <div>
+        <div className={s.container}>
             <input
                 onChange={e => dispatch(changeFilter(e.target.value))}
                 type="text"

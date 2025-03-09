@@ -2,8 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f9fa;
-    /* Світлий фон */
 }
 
 .form {
@@ -13,7 +11,7 @@
     padding: 30px;
     width: 100%;
     max-width: 400px;
-    background: #ffffff;
+    background: #ffd175dc;
     /* Білий фон форми */
     border: 1px solid #ddd;
     /* Легкий бордюр */
@@ -31,23 +29,25 @@
 label {
     font-size: 16px;
     font-weight: 500;
-    color: #333;
-    /* Темний текст */
+    color: #230C0F;
+;
 }
 
 .input {
+    color: #fcf4e9;
     padding: 10px 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    background-color: #dda15e;
+    border: 1px solid #dda15e;
     border-radius: 5px;
     transition: border-color 0.3s ease;
 }
 
 .input:focus {
-    border-color: #007bff;
-    /* Синя рамка при фокусі */
+    border-color: #bb6b25;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #dda15e;
+    box-shadow: 0 0 5px rgba(187, 107, 37, 0.5);
 }
 
 .error {
@@ -63,7 +63,7 @@ label {
     font-weight: 600;
     color: #fff;
     /* Білий текст */
-    background-color: #007bff;
+    background-color: #bb6b25;
     /* Синя кнопка */
     border: none;
     border-radius: 5px;
@@ -72,14 +72,14 @@ label {
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #ba6012;
     /* Темніший синій при ховері */
     transform: scale(1.05);
     /* Легке збільшення */
 }
 
 .button:active {
-    background-color: #004085;
+    background-color: #ba6012;
     /* Ще темніший синій */
     transform: scale(1);
     /* Повернення до звичайного розміру */

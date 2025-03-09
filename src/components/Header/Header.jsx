@@ -11,7 +11,7 @@ const Header = () => {
   const dispatch = useDispatch();
   return (
     <header>
-      {user.name && <h3>Welcome, {user.email}</h3>}
+      {user.name && <h3 className={s.welcome}>Welcome, {user.email}</h3>}
       <nav className={s.nav}>
         <NavLink className={({ isActive }) => clsx(s.link, isActive && s.active)} to='/'>Home</NavLink>
         <NavLink className={({ isActive }) => clsx(s.link, isActive && s.active)} to='/contacts'>Contacts</NavLink>
@@ -21,7 +21,7 @@ const Header = () => {
         <NavLink className={({ isActive }) => clsx(s.link, isActive && s.active)} to='/register'>Register</NavLink>
           </>
         )}
-        {isLoggedIn && <button onClick={()=> dispatch(logoutThunk())}>Logout</button>}
+        {isLoggedIn && <button className={s.logout} onClick={()=> dispatch(logoutThunk())}>Logout</button>}
       </nav>
     </header>
   );

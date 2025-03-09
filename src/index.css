@@ -1,15 +1,7 @@
 body {
   font-family: Bradley Hand, cursive;
   line-height: 1.5;
-}
-
-header {
-  padding: 20px;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
+  background-color: #ffecc6a4;
 }
 
 h1,
@@ -41,14 +33,6 @@ button {
   justify-content: center;
   display: flex;
   gap: 20px;
-}
-
-.header {
-  background-color: teal;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: bold;
 }
 
 img {
