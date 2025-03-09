@@ -1,17 +1,17 @@
-import { deleteContact } from '../../redux/contacts/operations';
 import s from './Contact.module.css'
-import { useDispatch } from 'react-redux';
 
 
 
-const Contact = ({contactItem}) => {
-    const dispatch = useDispatch();
-     const { name, number } = contactItem;
-
+const Contact = ({contactItem, openModal}) => {
+    const { name, number, id } = contactItem;
+    
     return (
         <li className={s.item}>
-            <p>{name}: {number}</p>
-            <button onClick={() => dispatch(deleteContact(contactItem.id))} className={s.button}>Delete</button>
+            <div className={s.name}>
+            <p>Name: {name}</p>
+            <p>Number: {number}</p>
+            </div>
+            <button onClick={() => openModal(id)} className={s.button}>Delete</button>
         </li>
     );
 };
