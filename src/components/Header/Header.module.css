@@ -8,12 +8,12 @@
     margin-left: 10px;
     display: flex;
     gap: 5px;
-    flex-direction: column; /* Вертикальное расположение по умолчанию */
-    align-items: flex-start; /* Выравнивание по левому краю */
+    /* flex-direction: column; */
+    align-items: flex-start;
 }
 
 .welcome {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .active {
@@ -24,10 +24,10 @@
 .logout {
     font-size: 12px;
     color: #230C0F;
-    border-radius: 15%;
+    border-radius: 10px;
     border: 1px solid rgb(230, 169, 100);
     background-color: #fdf0d5;
-    padding: 5px 10px; /* Добавляем отступы для удобства нажатия */
+    padding: 2.5px 5px;
 }
 
 header {
@@ -40,32 +40,42 @@ header {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 480px) {
     .welcome {
-        font-size: 12px;
+        font-size: 16px;
+    }
+    .link {
+        font-size: 16px;
     }
 
     .nav {
-        flex-direction: row; /* Горизонтальное расположение на средних экранах */
-        gap: 10px;
-        margin-left: auto; /* Навигация сдвигается вправо */
+        margin-left: 0;
+        align-items: flex-start;
+        gap: 8px;
     }
-
-    .logout{
-        font-size: 10px;
-        padding: 3px 6px;
+    .logout {
+        font-size: 16px;
+        padding: 5px 10px;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 768px) {
     .welcome {
-        font-size: 14px; /* Немного увеличим на очень маленьких экранах */
+        font-size: 24px;
     }
 
     .nav {
-        flex-direction: column; /* Вертикальное расположение на маленьких экранах */
-        margin-left: 0; /* Убираем отступ слева */
-        align-items: flex-start; /* Выравнивание по левому краю */
-        gap: 8px;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: auto;
+    }
+
+    .link {
+        font-size: 24px;
+    }
+
+    .logout{
+        font-size: 20px;
+        padding: 3px 8px;
     }
 }
